@@ -1,43 +1,162 @@
-/* section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: red;
+
+html, body {
+  /* height: 100%; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* position: relative; */
+}
+
+/* .cloud {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+
 } */
 
+.sun {
+  background: #F1EB9C;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px 15px #FFFFE0;
+  animation: 5s sunrise;
+}
 
-/*
-    transition: auto;
-    transition-property: opacity;
-    transition-duration: 3s;
-    opacity: 1;
+  @keyframes sunrise {
+    from {
+      margin-top: 50%;
+    }
+    to {
+
+      margin-top: 0%;
+    }
+
+  }
+
+/*Text that appears in center after buttons are clicked */
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 5px solid #FFFF00; */
+  padding: 10px;
+  text-align: center;
+  color: #570861;
+  font-family: 'Lobster', cursive;
+
+}
+
+/*#links
+/*How do I make them appear inline?
+
+}
 */
 
-#button1, #button2, #button3, #button4 {
-
-  /* display: flex;
-  justify-content: flex;
-  align-items: center; */
-  /* overflow: hidden; */
-  background-image: url(images/cloud.jpeg);
-  background-repeat: no-repeat;
-  border: none;
-  /* background-size: contain; */
-  padding: 100px;
-  background-size: 25%;
-  text-align: center;
-}
-
-
-
-
 body {
-  background-image: url(images/sun.jpeg);
+  /* background-image: url(images/sun.jpeg); */
+  /* background-color: #ff6367; */
+  background: rgb(131,58,180);
+  background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-origin: border-box;
+}
+
+
+
+.container {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.buttonContainer {
+  /* background-image: url(portfolio/images/cloud.jpeg) */
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  /* display: flex; */
+
+
 
 }
 
-.section {
+.button {
+  background: url(images/cloud_better.svg)
+  font-size: 15px;
+  color: white;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: lemonchiffon;
+  font-family: 'Lobster', cursive;
+}
+
+
+
+.bio {
   text-align: center;
 }
+
+#submitForm {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 20px;
+  text-align: center;
+  color: lemonchiffon;
+  font-family: 'Lobster', cursive;
+}
+
+#label {
+  color: lemonchiffon;
+  left: 10px;
+}
+
+#submitButton {
+  background-color: lemonchiffon;
+  color: #570861;
+}
+
+#future-projects {
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .button {
+    font-size: 24px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .button {
+    font-size: 18px;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
