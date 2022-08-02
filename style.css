@@ -1,0 +1,43 @@
+/* section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+} */
+
+
+/*
+    transition: auto;
+    transition-property: opacity;
+    transition-duration: 3s;
+    opacity: 1;
+*/
+
+#button1, #button2, #button3, #button4 {
+
+  /* display: flex;
+  justify-content: flex;
+  align-items: center; */
+  /* overflow: hidden; */
+  background-image: url(images/cloud.jpeg);
+  background-repeat: no-repeat;
+  border: none;
+  /* background-size: contain; */
+  padding: 100px;
+  background-size: 25%;
+  text-align: center;
+}
+
+
+
+
+body {
+  background-image: url(images/sun.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.section {
+  text-align: center;
+}
