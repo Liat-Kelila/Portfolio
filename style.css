@@ -109,6 +109,7 @@ body {
 
 .bio {
   text-align: center;
+  top: 50px;
 }
 
 #submitForm {
