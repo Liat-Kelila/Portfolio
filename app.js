@@ -187,7 +187,7 @@ const links = () => {
 // $audioContainer.text('Click here for audio');
 
 
-const soundTrack = new Audio('audio/audio.mp3');
+const soundTrack = new Audio('Audio/Audio.mp3');
 
 
 
